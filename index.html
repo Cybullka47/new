@@ -7,9 +7,10 @@
 <style> body { margin: 0; overflow: hidden; /* Чтобы скрыть полосы прокрутки */ background-color: #f9e7d4; /* Цвет фона */ display: flex; justify-content: center; align-items: center; min-height: 100vh; } .cat-container { position: relative; width: 300px; height: 250px; } .cat { position: absolute; top: 50%; left: 15%; transform: translateY(-50%); animation: eat 2s infinite alternate; } .bowl { position: absolute; bottom: 30px; right: 70px; } @keyframes eat { from {transform: translateY(-50%) rotate(5deg);} to {transform: translateY(-65%) rotate(-5deg);} } </style>
 </head>
 <body>
-   <div class="cat-container">
-        <img src="cat.png" alt="Котик" class="cat">
-        <img src="bowl.png" alt="Миска" class="bowl">
+    <!-- Анимация котов -->
+    <img src="https://placekitten.com/g/400/200" alt="Котик" class="cat">
+    <img src="https://placekitten.com/g/350/150" alt="Котик" class="cat" style="animation-delay: 5s;">
+    <img src="https://placekitten.com/g/450/250" alt="Котик" class="cat" style="animation-delay: 7s;">
     </div>
     <!-- Контейнер с текстом -->
     <div class="cat-container">
@@ -17,10 +18,7 @@
         <p>Это простой сайт с анимацией котов.</p>
     </div>
     
-    <!-- Анимация котов -->
-    <img src="https://placekitten.com/g/400/200" alt="Котик" class="cat">
-    <img src="https://placekitten.com/g/350/150" alt="Котик" class="cat" style="animation-delay: 5s;">
-    <img src="https://placekitten.com/g/450/250" alt="Котик" class="cat" style="animation-delay: 7s;">
+
     
 </body>
 </html>
